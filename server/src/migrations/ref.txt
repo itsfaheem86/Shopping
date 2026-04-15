@@ -1,0 +1,8 @@
+# Generate migration
+npm run migration:dev:generate ./src/migrations/add-ws-price-and-mr-price-to-product-table
+
+# Run migration
+npm run migration:dev:run
+
+# Revert latest migration
+npm run migration:dev:revert
