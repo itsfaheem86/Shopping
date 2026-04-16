@@ -10,30 +10,20 @@
     "dev": "NODE_ENV=dev nodemon --watch 'src/**/*.ts' --exec 'ts-node' -r tsconfig-paths/register src/server.ts",
     "lint": "eslint 'src/**/*.ts'",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "migration:dev:generate": "NODE_ENV=dev ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate -d ./src/db/data-source.ts",
-    "migration:dev:run": "NODE_ENV=dev ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run -d ./src/db/data-source.ts",
-    "migration:dev:revert": "NODE_ENV=dev ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:revert -d ./src/db/data-source.ts",
-    "runner:dev": "NODE_ENV=dev node dist/src/scripts/runner.js"
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
-    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.0.3",
     "@types/supertest": "^6.0.3",
-    "dotenv": "^16.5.0",
     "eslint": "^9.29.0",
-    "express": "^5.1.0",
-    "install": "^0.13.0",
     "jest": "^30.0.2",
     "nodemon": "^3.1.10",
-    "npm": "^11.4.2",
     "prettier": "^3.5.3",
     "prettier-plugin-organize-imports": "^4.1.0",
     "supertest": "^7.1.1",
@@ -44,11 +34,9 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "express-validator": "^7.2.1",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.16.3",
-    "typeorm": "^0.3.25"
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
   }
 }
